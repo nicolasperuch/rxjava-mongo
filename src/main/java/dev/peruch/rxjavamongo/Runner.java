@@ -1,16 +1,17 @@
 package dev.peruch.rxjavamongo;
 
+import dev.peruch.rxjavamongo.repositories.CustomerRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Runner {
+public class Runner{
 
-	public static void main(String[] args) throws InterruptedException {
-//		SpringApplication.run(Runner.class, args);
-		EntryPointFlow entryPointFlow = new EntryPointFlow();
+	@Autowired
+	private CustomerRepository repository;
 
-		entryPointFlow.firstTry();
-		entryPointFlow.secondTry();
-		entryPointFlow.thirdTry();
+	public static void main(String[] args) {
+		SpringApplication.run(Runner.class, args);
 	}
 }
