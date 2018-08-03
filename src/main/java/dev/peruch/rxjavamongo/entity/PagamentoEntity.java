@@ -1,7 +1,13 @@
 package dev.peruch.rxjavamongo.entity;
 
-/**
- * Created by nicolasperuch on 02/08/18.
- */
-public class PagamentoEntity {
+import dev.peruch.rxjavamongo.controller.dto.PagamentoDto;
+
+public class PagamentoEntity extends Message{
+
+    private PagamentoDto pagamentoDto;
+
+    public PagamentoEntity(String idTransacao, String type, PagamentoDto pagamentoDto) {
+        super(idTransacao, type);
+        this.pagamentoDto = pagamentoDto;
+    }
 }

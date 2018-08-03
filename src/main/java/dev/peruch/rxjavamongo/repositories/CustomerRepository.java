@@ -1,6 +1,6 @@
 package dev.peruch.rxjavamongo.repositories;
 
-import dev.peruch.rxjavamongo.entities.Customer;
+import dev.peruch.rxjavamongo.entity.Customer;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;

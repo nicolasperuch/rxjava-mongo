@@ -1,6 +1,6 @@
 package dev.peruch.rxjavamongo.service;
 
-import dev.peruch.rxjavamongo.entities.Customer;
+import dev.peruch.rxjavamongo.entity.Customer;
 import dev.peruch.rxjavamongo.repositories.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,6 +20,8 @@ public class CustomerService {
     public List<Customer> findAll() {
         return customerRepository.findAll();
     }
+
+
 
     public long count() {
         return customerRepository.count();

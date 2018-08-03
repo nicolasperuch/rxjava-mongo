@@ -1,4 +1,4 @@
-package dev.peruch.rxjavamongo.entities;
+package dev.peruch.rxjavamongo.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
